@@ -37,6 +37,7 @@ jobs:
         run: |
           sphinx-apidoc --no-toc --module-first -f -o docs/ src/
           sphinx-build docs public -b dirhtml
+          cat docs/main.rst
           
       - name: Debugging information
         run: |
